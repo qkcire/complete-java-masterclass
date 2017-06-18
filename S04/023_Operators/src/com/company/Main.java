@@ -22,8 +22,30 @@ public class Main {
         if (topScore < 100)
             System.out.println("\nYou got the highest score.");
 
-        int secondTopScore = 60;
+        int secondTopScore = 95;
         if (topScore > secondTopScore && topScore < 100)
             System.out.println("Greater than top score and less than 100");
+
+        if (topScore > 90 || secondTopScore <= 90)
+            System.out.println("One of these test is true.");
+
+        boolean isCar = false;
+        if (isCar)
+            System.out.println("This is not supposed to happen.");
+
+        isCar = true;
+        boolean wasCar = isCar ? true : false;
+        if (wasCar)
+            System.out.println("wasCar is true");
+
+        //CHALLENGE TIME
+        double dValue1 = 20;
+        double dValue2 = 80;
+        double dValue3 = (dValue1 + dValue2) * 25;
+        double dSumRemainder = dValue3 % 40;
+        if (dSumRemainder <= 20) {
+            System.out.println("Total was over the limit.");
+            System.out.println("dSumRemainder = " + dSumRemainder);
+        }
     }
 }
