@@ -25,6 +25,10 @@ public class BankAccount {
         this.phoneNumber = phoneNumber;
     }
 
+    public BankAccount(String customerName, String email, String phoneNumber) {
+        this(9999, 100.44, customerName, email, phoneNumber);
+    }
+
     //setters
     public void setAccountNumber(int accountNumber) {
         this.accountNumber = accountNumber;
@@ -74,7 +78,7 @@ public class BankAccount {
     }
 
     public void withdrawFunds(double funds) {
-        if (this.balance - funds <= 0D) {
+        if (this.balance - funds < 0D) {
             System.out.println("Unable to withdraw funds. Insufficient balance.");
             return;
         }
