@@ -19,5 +19,6 @@ public class Main {
 
         Ferrari f80 = new Ferrari(7, "premium");
         System.out.println("F80 wheels: " + f80.getWheels() + '\n');
+        System.out.println("F80 trim: " + f80.getTrim());
     }
 }
