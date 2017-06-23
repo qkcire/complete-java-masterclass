@@ -6,35 +6,26 @@ package com.company;
 public class Vehicle {
     private int wheels;
     private int maxSpeed;
-    private String body;
-    private String color;
-    private boolean Steering;
+    private int gears;
 
-    public Vehicle(int wheels, int maxSpeed, String body, String color, boolean Steering) {
+    public Vehicle(int wheels, int maxSpeed, int gears) {
         this.wheels = wheels;
         this.maxSpeed = maxSpeed;
-        this.body = body;
-        this.color = color;
-        this.Steering = Steering;
+        this.gears = gears;
     }
 
     public int getWheels() {
+        System.out.println("Vehicle.getWheels() called.");
         return wheels;
     }
 
     public int getMaxSpeed() {
+        System.out.println("Vehicle.getMaxSpeed() called.");
         return maxSpeed;
     }
 
-    public String getBody() {
-        return body;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public boolean isSteering() {
-        return Steering;
+    public int getGears() {
+        System.out.println("Vehicle.getGears() called.");
+        return gears;
     }
 }

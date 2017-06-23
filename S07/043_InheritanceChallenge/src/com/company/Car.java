@@ -4,39 +4,42 @@ package com.company;
  * Created by eq on 6/22/17.
  */
 public class Car extends Vehicle {
-    private int gears;
-    private int seats;
-    private int maxHorsePower;
-    private String transmission;
-    private String handSteering;
+    private String make;
+    private String model;
+    private String color;
+    private int year;
 
-    public Car(int speed, String body, String color, boolean Steering, int gears,
-               int seats, int maxHorsePower, String transmission, String handSteering) {
-        super(4, speed, body, color, Steering);
-        this.gears = gears;
-        this.seats = seats;
-        this.maxHorsePower = maxHorsePower;
-        this.transmission = transmission;
-        this.handSteering = handSteering;
+    public Car(String make, String model, String color, int year, int maxSpeed, int gears) {
+        super(4, maxSpeed, gears);
+        this.make = make;
+        this.model = model;
+        this.color = color;
+        this.year = year;
     }
 
-    public int getGears() {
-        return gears;
+    public String getMake() {
+        System.out.println("Car.getMake() called.");
+        return make;
     }
 
-    public int getSeats() {
-        return seats;
+    public String getModel() {
+        System.out.println("Car.getModel() called.");
+        return model;
     }
 
-    public int getMaxHorsePower() {
-        return maxHorsePower;
+    public String getColor() {
+        System.out.println("Car.getColor() called.");
+        return color;
     }
 
-    public String getTransmission() {
-        return transmission;
+    public int getYear() {
+        System.out.println("Car.getYear() called.");
+        return year;
     }
 
-    public String getHandSteering() {
-        return handSteering;
+    @Override
+    public int getWheels() {
+        System.out.println("Car.getWheels() called.");
+        return super.getWheels();
     }
 }
