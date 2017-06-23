@@ -8,13 +8,16 @@ public class Main {
 //        System.out.println("bike max speed: " + bike.getMaxSpeed() + '\n');
 //        System.out.println("bike gears: " + bike.getGears());
 //
-        Car toyotaCamry = new Car("Toyota", "Camry", "red", 2017, 140, 5);
-        System.out.println("Camry wheels: " + toyotaCamry.getWheels() + '\n');
-        System.out.println("Camry model: " + toyotaCamry.getModel() + '\n');
-        System.out.println("Camry make: " + toyotaCamry.getMake() + '\n');
-        System.out.println("Camry color: " + toyotaCamry.getColor() + '\n');
-        System.out.println("Camry year: " + toyotaCamry.getYear() + '\n');
-        System.out.println("Camry max speed: " + toyotaCamry.getMaxSpeed() + '\n');
-        System.out.println("Camry gears: " + toyotaCamry.getGears());
+//        Car toyotaCamry = new Car("Toyota", "Camry", "red", 2017, 140, 5);
+//        System.out.println("Camry wheels: " + toyotaCamry.getWheels() + '\n');
+//        System.out.println("Camry model: " + toyotaCamry.getModel() + '\n');
+//        System.out.println("Camry make: " + toyotaCamry.getMake() + '\n');
+//        System.out.println("Camry color: " + toyotaCamry.getColor() + '\n');
+//        System.out.println("Camry year: " + toyotaCamry.getYear() + '\n');
+//        System.out.println("Camry max speed: " + toyotaCamry.getMaxSpeed() + '\n');
+//        System.out.println("Camry gears: " + toyotaCamry.getGears());
+
+        Ferrari f80 = new Ferrari(7, "premium");
+        System.out.println("F80 wheels: " + f80.getWheels() + '\n');
     }
 }
