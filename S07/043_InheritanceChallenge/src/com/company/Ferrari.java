@@ -12,6 +12,7 @@ public class Ferrari extends Car{
     }
 
     public String getTrim() {
+        System.out.println("Ferrari.getTrim() called.");
         return trim;
     }
 }
