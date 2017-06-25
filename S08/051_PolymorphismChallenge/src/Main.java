@@ -42,8 +42,8 @@ class Car {
 }
 
 class Mazda extends Car {
-    public Mazda() {
-        super(4, "Mazda3");
+    public Mazda(int cylinders, String name) {
+        super(cylinders, name);
     }
 
     @Override
@@ -63,8 +63,8 @@ class Mazda extends Car {
 }
 
 class Toyota extends Car {
-    public Toyota() {
-        super(4, "Camry");
+    public Toyota(int cylinders, String name) {
+        super(cylinders, name);
     }
 
     @Override
@@ -93,12 +93,12 @@ public class Main {
         System.out.println(car.brake() + '\n');
         System.out.println(car.startEngine() + '\n');
         System.out.println("**************");
-        Car mazda3 = new Mazda();
+        Car mazda3 = new Mazda(8, "Mazda3");
         System.out.println(mazda3.accelerate() + '\n');
         System.out.println(mazda3.brake() + '\n');
         System.out.println(mazda3.startEngine() + '\n');
         System.out.println("**************");
-        Toyota camry = new Toyota();
+        Toyota camry = new Toyota(4, "Camry");
         System.out.println(camry.accelerate() + '\n');
         System.out.println(camry.brake() + '\n');
         System.out.println(camry.startEngine() + '\n');
