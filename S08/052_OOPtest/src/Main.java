@@ -51,6 +51,9 @@ public class Main {
         }
         System.out.println(output);
 
+        // next steps:
+        //  - set up additional addon options (ask the customer if they want any other options)
+
     }
 
 }
