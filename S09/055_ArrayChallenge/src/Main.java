@@ -31,10 +31,10 @@ public class Main {
         }
     }
 
-    public static int[] sortIntegers(int[] array) {
+    public static int[] sortIntegers(int[] oldArray) {
         int placeHolder;
-        int[] newArray = new int[array.length];
-        System.arraycopy(array, 0, newArray, 0, array.length);
+        int[] newArray = new int[oldArray.length];
+        System.arraycopy(oldArray, 0, newArray, 0, oldArray.length);
         for (int i = 0; i < newArray.length; i++) {
             for (int k = i + 1; k < newArray.length; k++) {
                 if (newArray[i] < newArray[k]) {
