@@ -11,11 +11,9 @@ public class Main {
         System.out.print("How many numbers would you like to add? ");
         int arrSize = input.nextInt();
         int[] array = new int[arrSize];
-        int element;
         for (int i = 0; i < arrSize; i++) {
             System.out.print("Enter #" + (i + 1) + ": ");
-            element = input.nextInt();
-            array[i] = element;
+            array[i] = input.nextInt();
         }
         return array;
     }
